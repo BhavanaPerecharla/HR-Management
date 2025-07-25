@@ -76,7 +76,7 @@ public class Employee {
 
         this.contact = contact;
         this.address = address;
-        this.leaveBalance = new LeaveBalance(rs.getInt("employee_id"), rs.getInt("sick_leaves"), rs.getInt("paid_leaves"));
+        
     }
     public Employee(int employeeId, String firstName, String lastName, String role,
                     String password, Contact contact, Address address) {
@@ -106,7 +106,7 @@ public class Employee {
 
         this.contact = contact;
         this.address = address;
-        this.leaveBalance = new LeaveBalance(rs.getInt("employee_id"), rs.getInt("sick_leaves"), rs.getInt("paid_leaves")); // default leave balance
+       
     }
 
     // === Getters & Setters ===
